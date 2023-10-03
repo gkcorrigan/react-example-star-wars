@@ -1,4 +1,3 @@
-import MyButton from './components/MyButton'
 import './App.css'
 
 function App() {
@@ -12,17 +11,13 @@ function App() {
   // } else {
   //   x = "Welcome, " + user.name;
   // }
-  const list = ["apples", "pears", "bananas", "mangos"];
+
   
   
 
   return (
    <div>
-    <h1 className='myCoolClass'>Welcome to my app</h1>
-    <MyButton foods={list}/>
-    {list.map((element, index, array) => {
-      return <li key={element + index}>{element}</li>
-      })}
+    
    </div>
   )
 }
