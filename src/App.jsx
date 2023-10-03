@@ -1,32 +1,24 @@
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-
- //conditional rendering. This example won't run but it shows how this would work in React
-  // let x = "";
-
-  // if (!user.loggedIn){
-  //   x = "Click here to Login";
-
-  // } else {
-  //   x = "Welcome, " + user.name;
-  // }
-
-  
-  
+const [people, setPeople] = useState([]);
 
   return (
-   <div>
-    
-   </div>
+  <div>
+    <h1>Star Wars People</h1>
+    <ul>
+      <li>{people.map((person) => {
+        return <li>{person.name}</li>
+      })}</li>
+    </ul>
+  </div>
   )
 }
 
-export default App
-
+export default App;
 
 //DOM Manipulation
-
 
 // list.forEach((item) =>{
 //   //create
